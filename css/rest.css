@@ -1,0 +1,168 @@
+.rest__title{
+  max-width: 717px;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 41px;
+}
+
+.rest__list{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap:40px;
+  column-gap:20px;
+}
+
+.rest__item_margin{
+  position: relative;
+  top:70px;
+}
+
+
+.rest__item:hover{
+  transform:scale(1.1);
+  transition-duration: 2s;
+}
+
+.rest__img{
+  display: flex;
+  align-items: flex-end;
+  width: 380px;
+  height: 228px;
+}
+
+.rest__img_vr{
+  background-image: url('../img/VR.jpg');
+  background-repeat: no-repeat;
+  column-gap: 144px;
+}
+
+.rest__img_audio{
+  background-image: url('../img/audio-system.jpg');
+  background-repeat: no-repeat;
+  padding-top: 70px;
+}
+
+.rest__item_pad{
+  margin-top: 70px;
+}
+
+.rest__item_padd{
+  margin-top: 39px;
+}
+
+
+.rest__img_karaoke{
+  background-image: url('../img/karaoke.jpg');
+  background-repeat: no-repeat;
+}
+
+.rest__img_game{
+  background-image: url('../img/table-game.jpg');
+  background-repeat: no-repeat;
+}
+
+.rest__img_cinema{
+  background-image: url('../img/cinema-service.jpg');
+  background-repeat: no-repeat;
+}
+
+.rest__img_PS{
+  background-image: url('../img/PS-5.jpg');
+  background-repeat: no-repeat;
+}
+
+.rest__description{
+  min-height:56px;
+  font-weight: bold;
+  line-height: 28px;
+  padding-left: 40px;
+  padding-bottom: 6px;
+}
+
+.rest__description_width_198{
+  max-width: 239px;
+}
+
+
+@media(max-width:1240px){
+  .rest__img{
+  max-width: 287px;
+}
+.rest__list{
+  justify-content: center;
+}
+
+.rest__title{
+  max-width: 717px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 auto 36px;
+}
+
+}
+
+
+
+@media(max-width:1024px){
+
+  .rest__title{
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+
+
+@media(max-width:966px){
+
+    .rest__img{
+  max-width: 334px;
+}
+  .rest__item{
+    flex-basis: 334px;
+  }
+
+  .rest__list{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+
+  .rest__item_margin{
+    top:0;
+  }
+}
+
+@media(max-width:780px){
+
+  .rest__title{
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+
+}
+
+
+@media(max-width:768px){
+
+  .rest__title{
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+
+@media(max-width:320px){
+
+  .rest__title{
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,126 @@
+.hall__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.hall__description{
+    max-width: 252px;
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.hall-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.hall__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hall__item_vibes{
+    background-image: url("../img/vibes.jpg");
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 349px;
+}
+
+.hall__item_star{
+    background-image: url("../img/star-wars.jpg");
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 349px;
+}
+
+.hall__item_wild{
+    background-image: url("../img/wild-west.jpg");
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 349px;
+}
+
+.hall__item_neon{
+    background-image: url("../img/neon-style.jpg");
+    background-repeat: no-repeat;
+    width: 580px;
+    height: 349px;
+}  
+
+@media(max-width:1300px) {
+        .hall__description{
+        font-size: 55px;
+        line-height: 60px;
+}
+
+    .hall-list{
+    justify-content: center;
+}
+    .hall__item_width{
+        width: 440px;
+    }
+
+}
+
+@media(max-width:1024px) {
+    .hall__description{
+        font-size: 50px;
+        line-height: 60px;
+}
+
+    .hall-list{
+    justify-content: center;
+}
+
+    .hall__item_width{
+        width: 335px;
+    }
+
+    .hall__title{
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+}
+
+@media(max-width:768px) {
+        .hall__description{
+        font-size: 40px;
+        line-height: 50px;
+}
+
+    .hall__item_width{
+        width: 240px;
+    }
+
+    .hall__title{
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+@media(max-width:570px) {
+    .hall__item_width{
+        width: 335px;
+    }
+}
+
+@media(max-width:320px) {
+    .hall__title{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+}
+

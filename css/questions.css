@@ -1,0 +1,138 @@
+.questions__title{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.questions__list{
+    list-style-type: none;
+}
+
+.questions__item{
+    background-color: var(--main-color, #fff);
+    margin-left: 0px;
+    margin-bottom: 20px;    
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px; 
+    /* position: relative; */
+}
+
+
+.questions__item:last-child{
+    margin-bottom: 0;
+}
+
+/* Цвет самого четного item */
+.questions__item:nth-child(even) .questions__button{ 
+    background-color: #440F51;
+    color:var(--main-color, #fff);
+} 
+
+.questions__text{
+    background-color: #fff;
+    color:#1C1A1A;
+    padding: 57px 70px;
+}
+
+.acc__accord{ 
+    flex: 0 0 46px;
+    display: inline-block;
+    height: 46px;
+    background-image: url("../img/icons/pirple-plus.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: background-color .2s ease-in-out;
+}
+
+.acc__accord-active{
+    background-image: url("../img/icons/pirple-minus.svg");
+}
+
+.questions__item:nth-child(even) .acc__accord{ 
+    background-image: url("../img/icons/white-plus.svg");
+}
+
+.questions__item:nth-child(even) .acc__accord-active{ 
+    background-image: url("../img/icons/white-minus.svg");
+}
+
+.questions__button{
+    position: relative;
+    padding: 30px 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: left;
+    gap: 15px;
+}
+
+
+@media(max-width:1024px){
+    .questions__title{
+        font-size: 30px;    
+        line-height: 40px;
+}
+
+
+.questions__item{
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.questions__button{
+    padding: 23px 25px;
+}
+
+}
+
+
+@media(max-width:768px){
+    .questions__title{
+        font-size: 24px;
+        line-height: 26px;
+}
+
+.questions__item{
+    font-size: 18px;
+}
+
+.questions__button{
+    padding: 23px 54px;
+}
+
+}
+
+
+@media(max-width:320px){
+    .questions__title{    
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .questions__item{
+        font-size: 12px;
+        line-height: 16px;
+}
+
+    .acc__accord{ 
+        flex: 0 0 30px;
+        display: inline-block;
+        height: 30px;
+        background-image: url("../img/icons/pirple-plus.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: background-color .2s ease-in-out;
+}
+
+.questions__button{
+    padding: 15px 13px;
+}
+}
+
+
+

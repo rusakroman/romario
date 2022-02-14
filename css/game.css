@@ -1,0 +1,405 @@
+.main-container{
+    position: relative;
+}
+
+.game-top__button{
+    width: 374px;
+    height: 80px;
+    background-color:  var(--purple,#6c0287);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border:1px solid #000;
+    border-radius: 10px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 30px;
+    color: #fff;
+    transition: background-color .2s ease-in-out;
+    position: relative;
+    z-index: 110;
+    text-transform: uppercase;
+}
+
+.game-top__button:hover{
+    background-color: var(--violet, #840AA3);
+}
+
+.game-top__button:focus{
+    background-color: var(--violet, #840AA3);
+}
+
+.game-top__button:active{
+    background-color: var(--violet-dark, #640AA3);
+}
+
+.game-top__subtitle{
+    padding-left: 100px;
+    font-size: 28px;
+    line-height: 50px;
+    margin-bottom: 58px;
+}
+
+.game-top__title{
+    font-family: "Arial Black";
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 1;
+    letter-spacing: -0.1em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.container-game{
+    height: 823px; 
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+} 
+
+/* .container-game::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 200px;
+    background-image: url("../img/game-over.svg");
+    background-repeat: repeat;
+    background-size: contain;
+    z-index: -1;
+} */
+
+.container-game::after{
+    content: "";
+    display: block;
+    width: 675px;
+     /* width: 57.2%; */
+    height: 768px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url("../img/gameboy.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+}
+
+
+.new{
+font-weight: bold;
+font-size: 75px;
+line-height: 106px;
+color: var(--pink, #CD06FF);
+text-transform: uppercase;
+
+}
+
+.number{
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 141px;
+    color: var(--pink, #CD06FF);   
+}
+
+.game-flex{
+    display: flex;
+    margin-bottom: 150px;
+    align-items:flex-end;
+    gap: 40px;
+}
+
+.left-game{
+max-width: 193px;
+display: flex;
+flex-direction: column;
+align-items:center;
+}
+
+.right-game{
+max-width: 172px;
+display: flex;
+flex-direction: column;
+align-items:center;
+gap:15px;
+}
+
+.left-text{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--main-color, #FFF);
+}
+
+.right-text{
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    text-align: center;
+    color: var(--main-color, #FFF);
+}
+
+.arrow{
+    display:block;
+    background: url("img/down.svg");
+    width: 97px;
+    height: 97px;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 8%;
+    z-index: 220;
+}
+
+.game-arrow:hover{
+    background-image: url('../img/hoverarrow.svg');
+}
+
+.game-arrow:focus{
+    background-image: url('../img/arrowfocus.svg');
+}
+
+.game-arrow:active{
+    background-image: url('../img/arrowactive.svg');
+}
+
+@media(max-width:1024px){
+    .container-game{
+    height: 583px; 
+} 
+
+.container-game::after{
+    width: 453px;
+    height: 520px;
+}
+
+.game-top__subtitle{
+    padding-left: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.game-top__title{
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+
+
+.game-flex{
+    margin-bottom: 80px;
+    gap:30px;
+}
+
+.number{
+    font-size: 80px;
+    line-height: 113px;
+}
+
+.new{
+    font-size: 60px;
+    line-height: 85px;
+}
+
+.left-text, .right-text  {
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.arrow__img{
+    width: 67px;
+    height: 67px;
+}
+
+.right-game{
+max-width: 140px;
+}
+
+.game-top__button{
+    width: 296px;
+    height: 64px;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+}
+
+
+@media(max-width:823px){
+    .container-game{
+    height: 524px; 
+} 
+
+.container-game::after{
+    width: 409px;
+    height: 479px;
+}
+
+.game-top__subtitle{
+    padding-left: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 28px;
+}
+
+.game-top__title{
+    font-size: 86px;
+    margin-bottom: 20px;
+}
+
+
+.game-flex{
+    margin-bottom: 100px;
+}
+
+.number{
+    font-size: 50px;
+    line-height: 71px;
+    padding-top: 12px;
+}
+
+.new{
+    font-size: 40px;
+    line-height: 56px;
+}
+
+.left-text, .right-text  {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.arrow__img{
+    display: none;
+}
+
+.right-game{
+max-width: 100px;
+}
+
+.left-game{
+max-width: 107px;
+}
+
+.game-top__button{
+    width: 214px;
+    height: 46px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+}
+
+@media(max-width:581px){
+    .container-game{
+    height: 320px; 
+} 
+
+.container-game::after{
+    width: 230px;
+    height: 270px;
+}
+
+.game-top__title{
+    font-size: 64px;
+    margin-bottom: 5px;
+}
+
+.number{
+    font-size: 46px;
+    line-height: 68px;
+    padding-top: 12px;
+}
+
+.new{
+    font-size: 36px;
+    line-height: 52px;
+}
+
+.left-text, .right-text  {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.game-flex{
+    gap:8px;
+    margin-bottom: 20px;
+}
+
+.game-top__subtitle{
+    /* padding-left: 30px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 2px; */
+    display: none;
+}
+
+.game-top__button{
+    width: 190px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+}
+
+@media(max-width:485px){
+        .container-game{
+    height: 300px; 
+} 
+    .game-top__title{
+    font-size: 58px;
+    margin-bottom: 5px;
+}
+
+
+
+    .container-game::after{
+    width: 185px;
+    height: 230px;
+}
+
+.game-top__button{
+    width: 160px;
+    height: 36px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+}
+
+
+@media(max-width:380px){
+        .container-game{
+    height: 280px; 
+} 
+    .game-top__title{
+    font-size: 46px;
+    margin-bottom: 5px;
+}
+
+    .container-game::after{
+    width: 176px;
+    height: 218px;
+}
+
+.game-top__button{
+    width: 117px;
+    height: 27px;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.left-text, .right-text  {
+    font-size: 12px;
+    line-height: 14px;
+}
+.left-game{
+    max-width: 78px;
+}
+
+}
