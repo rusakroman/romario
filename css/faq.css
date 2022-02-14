@@ -13,6 +13,7 @@
 
 .faq-list-item{
     background-color: var(--main-color, #fff);
+    cursor:pointer;
     color: #1C1A1A;
     font-weight: 700;
     font-size: 24px;

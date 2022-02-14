@@ -13,6 +13,7 @@
 
 .questions__item{
     background-color: var(--main-color, #fff);
+    cursor:pointer;
     margin-left: 0px;
     margin-bottom: 20px;    
     color: #1C1A1A;

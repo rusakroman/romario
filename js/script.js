@@ -52,3 +52,21 @@ const modalBtn = $('.burger')
 modalBtn.click(function(){
   $('.navigation__list').show(1000); 
 });
+
+
+
+
+// Плавный скролл
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+for (let smoothLink of smoothLinks) {
+    smoothLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = smoothLink.getAttribute('href');
+
+        document.querySelector(id).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+};
+	
