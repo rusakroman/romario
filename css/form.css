@@ -149,6 +149,21 @@
   border-color: transparent;
 }
 
+.halls__button:hover{
+    background-color: var(--violet, #840AA3);
+    color:#fff;
+}
+
+.halls__button:focus{
+  background-color: var(--violet, #840AA3);
+  color:#fff;
+}
+
+.halls__button:active{
+    background-color: var(--violet-dark, #640AA3);
+    color:#fff;
+}
+
 .main-fil{
     max-width: 980px;
     margin: 0 auto;
