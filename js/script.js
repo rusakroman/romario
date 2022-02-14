@@ -48,9 +48,14 @@ $('.questions__list').accordion({
 });
 
 const modalBtn = $('.burger')
+const modalkaBtn = $('.header__button')
 
 modalBtn.click(function(){
   $('.navigation__list').show(1000); 
+});
+
+modalkaBtn.click(function(){
+  $('.modalka').show(1000); 
 });
 
 

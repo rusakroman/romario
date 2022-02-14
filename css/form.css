@@ -55,6 +55,31 @@
     transition: background-color .2s ease-in-out;
 }
 
+
+.halls__label:hover{
+  background: #EADEED;
+  border:3px solid #640AA3;
+}
+
+.halls__label:focus{
+  background: #fff;
+  border:3px solid #640AA3;
+}
+
+.halls__label:active{
+  background: #EADEED;
+  border:none;
+}
+
+.input-condition:focus{
+  outline:2px solid #CD06FF;
+}
+
+.input-condition:active{
+  outline:2px solid #CD06FF;
+}
+
+
 .halls-radio{
   position: absolute;
   -webkit-appearance: none;
@@ -97,6 +122,10 @@
   margin-right: 12px;
   width: 27px;
   height: 27px;
+}
+
+.box__input:focus{
+  outline:1px solid #CD06FF;
 }
 
 .box__label{

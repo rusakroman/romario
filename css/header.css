@@ -50,7 +50,7 @@
 
 .navigation__link:hover{
   color:var(--purple,#6c0287);
-  transition: background-color 0.2s ease-in-out;
+  transition: color .3s ease-in-out;
 }
 
 .burger{

@@ -49,6 +49,10 @@
     transition: background-color .2s ease-in-out;
 }
 
+/* .acc__accord:hover{
+    background-image: url("../img/hover-plus.svg");
+} */
+
 .acc__accord-active{
     background-image: url("../img/icons/pirple-minus.svg");
 }

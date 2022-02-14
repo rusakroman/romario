@@ -15,6 +15,7 @@
 <body>
     <header>
         <div class="container flex-container">
+        
             <div class="burger">
                 <button class="burger__button">
                     <img class="burger__button-icon" src="img/burger.svg" alt="Бургер меню">
@@ -42,7 +43,42 @@
             </nav>
             <button class="header__button" aria-label="Заказ звонка">Заказать звонок</button>
         </div>
+
+        <div class="container">
+              <div class="modalka-container">
+             <div class="wrapper-modal">
+               
+            <div class="modalka">
+        
+                <div class="close">
+                  <img src="img/close.svg" alt="">
+                </div>
+        
+        <div class="container container-modal">
+          <form action="" class="modal">
+            <h2 class="modal__title">заказать звонок</h2>
+            <label class="modal__label">Имя
+              <input type="name" class="modal__input input-mar">
+            </label>
+
+            <label class="modal__label">Телефон
+              <input type="tel" class="modal__input">
+            </label>
+            <button class="modal__button">позвонить мне</button>
+          </form>
+        </div>
+
+          </div>
+          
+        </div>
+        </div>
+
+    
+
     </header>
+
+
+
     <main>
         
         <section class="game-top">
@@ -63,8 +99,7 @@
                                 <p class="right-game__description right-text">Новейшая аппаратура</p>
                             </div>
                         </div>
-
-                        <button class="game-top__button" type="submit">Забронировать</button>
+                        <a class="game-top__button" href="#form-order">Забронировать</a>
                           <a href="#arrow-rest" class="game-top__link-arrow arrow arrow-condition" aria-label="Стрелка-ссылка для перехода на соседний блок">
                             <!-- <img class="arrow__img" src="img/down.svg" alt="Кнопка, переход к блоку ниже"> -->
                         </a>
@@ -133,7 +168,7 @@
         </section>
 
         
-       <section class="halls">
+  <section id="form-order" class="halls">
     <div class="container">
       <form class="halls__form hall-form" action="#" method="post">
         <h2 id="bron-form" class="hall-form__title">Забронировать зал просто</h2>
@@ -227,11 +262,11 @@
           <fieldset class="main-fil__col first">
 
             <fieldset class="dtime">
-              <input class="first-input  input-date" type="date" value="Дата" placeholder="Дата">
-              <input class="first__input input-time" type="time" placeholder="Время">
+              <input class="first-input  input-date input-condition" type="date" value="Дата" placeholder="Дата">
+              <input class="first__input input-time input-condition" type="time" placeholder="Время">
             </fieldset>
             <fieldset class="countchel">
-              <input class="first__input input-count" type="number" placeholder="Количество человек">
+              <input class="first__input input-count input-condition" type="number" placeholder="Количество человек">
             </fieldset>
             
           </fieldset>
@@ -239,19 +274,19 @@
           <fieldset class="xls">
              <fieldset class="main-fil__col second">
             <label class="second__label name-label">Имя
-                <input class="second__input input-name" type="tel" name="phone" value="">
+                <input class="second__input input-name input-condition" type="tel" name="phone" value="">
             </label>  
             <label class="second__label">Фамилия
-                <input class="second__input input-surname" type="email" name="email" value="">
+                <input class="second__input input-surname input-condition" type="email" name="email" value="">
             </label>
           </fieldset>
 
           <fieldset class="main-fil__col third">
             <label class="third__label name-label">Телефон
-                <input class="third__input input-tel" type="tel" name="phone" value="">
+                <input class="third__input input-tel input-condition" type="tel" name="phone" value="">
             </label>  
             <label class="third__label">E-mail
-                <input class="third__input input-mail" type="email" name="email" value="">
+                <input class="third__input input-mail input-condition" type="email" name="email" value="">
             </label>
           </fieldset>
           </fieldset>
@@ -475,6 +510,28 @@
               </div>
         </div>
     </footer>
+
+      <div class="modalka">
+        <div class="close">
+          <img src="img/close.svg" alt="">
+        </div>
+        <div class="container container-modal">
+          <form action="" class="modal">
+            <h2 class="modal__title">заказать звонок</h2>
+            <label class="modal__label">Имя
+              <input type="name" class="modal__input input-mar">
+            </label>
+
+            <label class="modal__label">Телефон
+              <input type="tel" class="modal__input">
+            </label>
+            <button class="modal__button">позвонить мне</button>
+          </form>
+        </div>
+      </div>
+
+
+
     <script>
         document.addEventListener('click', event => {
     if (event.target.matches('button')) {
