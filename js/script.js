@@ -55,7 +55,7 @@ modalBtn.click(function(){
 });
 
 modalkaBtn.click(function(){
-  $('.modalka').show(1000); 
+  $('.main-wrapper').show(1000); 
 });
 
 
@@ -77,14 +77,14 @@ for (let smoothLink of smoothLinks) {
 	
 
 
-const modalClose = $('.close-cross')
+const modalClose = $('.modal-close')
 
 modalClose.click(function(){
-  $('.modalka').hide(500); 
+  $('.main-wrapper').hide(1000); 
 });
 
-const modalOrderTitle = $('.modal__title')
-const modalOrderInput = $('.modal__input')
+const modalOrderTitle = $('.modal-form__title')
+const modalOrderInput = $('.modal-form__input')
 
   modalOrderInput.focus(function(){
   modalOrderTitle.text(`Введите ${$(this).attr('placeholder').toLowerCase()}`)
@@ -94,7 +94,9 @@ const modalOrderInput = $('.modal__input')
   modalOrderTitle.text('Заполните форму');
 })
 
-$('.modalka').submit(function(event){
+
+
+$('.modal').submit(function(event){
   event.preventDefault();
   $.ajax({
     url: 'https://jsonplaceholder.typicode.com/todos',
@@ -107,7 +109,7 @@ $('.modalka').submit(function(event){
     },
     sucсess(data){
       console.log(modalOrderTitle);
-      modalOrderTitle.text('Спасибо ваша заявка принята, номер заявки' + data.id)
+      modalOrderTitle.text('Спасибо ваша заявка принята, номер заявки' + '' + data.id)
       $('modal').slideUp(300);
     },
     error(){
@@ -116,9 +118,29 @@ $('.modalka').submit(function(event){
   })
 });  
 
+// const modalOrderTitle2 = $('.hall-form__title')
 
-
-
+// $('.hall-form').submit(function(event){
+//   event.preventDefault();
+//   $.ajax({
+//     url: 'https://jsonplaceholder.typicode.com/todos',
+//     type: 'POST',
+//     data: $(this).serialize(),
+//     statusCode: {
+//     201: function(data) {
+//       this.sucсess(data);
+//       }
+//     },
+//     sucсess(data){
+//       console.log(modalOrderTitle2);
+//       modalOrderTitle2.text('Спасибо ваша заявка принята, номер заявки' + '' + data.id)
+//       $('hall-form').slideUp(300);
+//     },
+//     error(){
+//       modalOrderTitle2.text('Что-то пошло не так')
+//     }
+//   })
+// });  
 
 
 

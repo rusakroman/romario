@@ -15,7 +15,6 @@
 <body>
     <header>
         <div class="container flex-container">
-        
             <div class="burger">
                 <button class="burger__button">
                     <img class="burger__button-icon" src="img/burger.svg" alt="Бургер меню">
@@ -43,41 +42,29 @@
             </nav>
             <button class="header__button" aria-label="Заказ звонка">Заказать звонок</button>
         </div>
-
-        <div class="container">
-              <div class="modalka-container">
-             <div class="wrapper-modal">
-               
-            <div class="modalka">
-        
-                <div class="close">
-                  <button class="close-cross">
-                    <!-- <img src="img/close.svg" alt=""> -->
-                  </button>
-                 
-                </div>
-        
-        <div class="container container-modal">
-          <form action="ttps://jsonplaceholder.typicode.com/todoss" class="modal">
-            <h2 class="modal__title">заказать звонок</h2>
-            <label class="modal__label">Имя
-              <input type="name" name="firstname" class="modal__input input-mar" placeholder="Имя" required>
-            </label>
-
-            <label class="modal__label">Телефон
-              <input type="tel" name="mobphone" class="modal__input" placeholder="Телефон" required>
-            </label>
-            <button class="modal__button">позвонить мне</button>
-          </form>
-        </div>
-
+        <!-- Модальное окно -->
+        <div class="container container_modal">
+          <div class="main-wrapper">
+            <div class="modal-wrapper form-pos">
+            <button class="modal-close">
+              <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)" fill="white"/>
+                <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)" fill="white"/>
+              </svg>
+            </button>
+            <form class="modal-form modal" action="https://postman-echo.com/post" method="POST">
+              <h2 class="modal-form__title">Заказать звонок</h2>
+              <label class="modal-form__label">Имя
+                <input class="modal-form__input" type="text" name="firstname" placeholder="Имя">
+              </label>
+              <label class="modal-form__label">Телефон
+                <input class="modal-form__input" type="tel" name="mobile" placeholder="Телефон">
+              </label>
+              <button type="submit" class="modal-button">Позвонить мне</button>
+            </form>
+            </div>
           </div>
-          
         </div>
-        </div>
-
-    
-
     </header>
 
 
@@ -173,28 +160,26 @@
         
   <section id="form-order" class="halls">
     <div class="container">
-      <form class="halls__form hall-form" action="#" method="post">
+      <form class="halls__form hall-form" action="https://jsonplaceholder.typicode.com/todos" method="post">
         <h2 id="bron-form" class="hall-form__title">Забронировать зал просто</h2>
         <p class="halls-form__description">Выбери зал</p>
         <div class="qqq">
           <ul class="halls-list">
           <li class="halls__item">
             <div class="div-start">
-              <input id="vibes" class="halls__input halls-radio" type="radio">
+              <input id="vibes" name="hall" class="halls__input halls-radio" type="radio" required>
             <label for="vibes" class="halls__label">80’s vibes</label>
-
             </div>
-            
           </li>
           <li class="halls__item qqq">
             <div class="div-end">
-              <input id="star-wars" class="halls__input halls-radio" type="radio">
+              <input id="star-wars" name="hall" class="halls__input halls-radio" type="radio" required>
               <label for="star-wars" class="halls__label">star wars</label>
             </div>
           </li>
           <li class="halls__item">
             <div class="div-start">
-                <input id="wild-west" class="halls__input halls-radio" type="radio">
+                <input id="wild-west" name="hall" class="halls__input halls-radio" type="radio" required>
             <label for="wild-west" class="halls__label">wild west</label>
 
             </div>
@@ -202,7 +187,7 @@
           </li>
           <li class="halls__item qqq">
             <div class="div-end">
-              <input id="neon-style" class="halls__input halls-radio" type="radio">
+              <input id="neon-style" name="hall" class="halls__input halls-radio" type="radio" required>
               <label for="neon-style" class="halls__label">neon style</label>
             </div>
           </li>
@@ -217,41 +202,41 @@
             <fieldset class="flex-fieldset__col box">
               <legend class="legenda">Приставка</legend>
               <label class="box__label">
-                <input class="box__input" type="radio" name="box" value="PlayStation 5">PlayStation 5
+                <input class="box__input" type="radio" name="box" value="PlayStation 5" required>PlayStation 5
               </label>
               <label class="box__label">
-                <input class="box__input" type="radio" name="box" value="Sega Mega Drive">Sega Mega Drive
+                <input class="box__input" type="radio" name="box" value="Sega Mega Drive" required>Sega Mega Drive
               </label>
               <label class="box__label">
-                <input class="box__input" type="radio" name="box" value="X-box ONe S">X-box One S
+                <input class="box__input" type="radio" name="box" value="X-box ONe S" required>X-box One S
               </label>
               <label class="box__label">
-                <input class="box__input" type="radio" name="box" value="Dendy">Dendy
+                <input class="box__input" type="radio" name="box" value="Dendy" required>Dendy
               </label>
             </fieldset>
             <fieldset class="flex-fieldset__col table-games">
               <legend class="legenda">Настольные игры</legend>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="table-game" value="Jenga">Jenga
+                <input class="box__input square" type="checkbox" name="table-game" value="Jenga" >Jenga
               </label>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="table-game" value="Monopoly">Monopoly
+                <input class="box__input square" type="checkbox" name="table-game" value="Monopoly" >Monopoly
               </label>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="table-game" value="Manchkin">Манчкин
+                <input class="box__input square" type="checkbox" name="table-game" value="Manchkin" >Манчкин
               </label>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="table-game" value="Alias">Alias
+                <input class="box__input square" type="checkbox" name="table-game" value="Alias" >Alias
               </label>
 
             </fieldset>
             <fieldset class="flex-fieldset__col dopol">
               <legend class="legenda">Дополнительно</legend>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="dop" value="karaoke">Караоке
+                <input class="box__input square" type="checkbox" name="dop" value="karaoke" >Караоке
               </label>
               <label class="box__label">
-                <input class="box__input square" type="checkbox" name="dop" value="vr">VR
+                <input class="box__input square" type="checkbox" name="dop" value="vr" >VR
               </label>
 
             </fieldset>
@@ -265,11 +250,11 @@
           <fieldset class="main-fil__col first">
 
             <fieldset class="dtime">
-              <input class="first-input  input-date input-condition" type="date" value="Дата" placeholder="Дата">
-              <input class="first__input input-time input-condition" type="time" placeholder="Время">
+              <input class="first-input  input-date input-condition" name="date" type="date" value="Дата" placeholder="Дата" required>
+              <input class="first__input input-time input-condition" name="time" type="time" placeholder="Время" required>
             </fieldset>
             <fieldset class="countchel">
-              <input class="first__input input-count input-condition" type="number" placeholder="Количество человек">
+              <input class="first__input input-count input-condition" name="count" type="number" placeholder="Количество человек" required>
             </fieldset>
             
           </fieldset>
@@ -277,25 +262,25 @@
           <fieldset class="xls">
              <fieldset class="main-fil__col second">
             <label class="second__label name-label">Имя
-                <input class="second__input input-name input-condition" type="tel" name="phone" value="">
+                <input class="second__input input-name input-condition" name="name" type="tel" name="phone" value="" required>
             </label>  
             <label class="second__label">Фамилия
-                <input class="second__input input-surname input-condition" type="email" name="email" value="">
+                <input class="second__input input-surname input-condition" name="surname" type="email" value="" required>
             </label>
           </fieldset>
 
           <fieldset class="main-fil__col third">
             <label class="third__label name-label">Телефон
-                <input class="third__input input-tel input-condition" type="tel" name="phone" value="">
+                <input class="third__input input-tel input-condition" type="tel" name="phone" value="" placeholder="Телефон" required>
             </label>  
             <label class="third__label">E-mail
-                <input class="third__input input-mail input-condition" type="email" name="email" value="">
+                <input class="third__input input-mail input-condition" type="email" name="email" value="" required>
             </label>
           </fieldset>
           </fieldset>
         </fieldset>
         <div class="test">
-          <button class="halls__button">Забронировать</button>
+          <button type="submit" class="halls__button">Забронировать</button>
         </div>
       </form>
     </div>
@@ -514,7 +499,7 @@
         </div>
     </footer>
 
-      <div class="modalka">
+      <!-- <div class="modalka">
         <div class="close">
           <img src="img/close.svg" alt="">
         </div>
@@ -531,7 +516,7 @@
             <button class="modal__button">позвонить мне</button>
           </form>
         </div>
-      </div>
+      </div> -->
 
 
 

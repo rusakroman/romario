@@ -1,81 +1,80 @@
-.modalka{
-  display: none;
+.modal-wrapper{
   width: 600px;
   height: 498px;
   background-color: #440F51;
-  position: relative;
-  margin: 0 auto;
 }
 
-.close-cross{
-  background-image:url("../img/close.svg");
-  width: 50px;
-  height: 50px;
-  background-repeat: no-repeat;
-  position: absolute;
-  top:15px;
-  right:15px;
-  background-color: transparent;
-  border:none;
+.modal-form__title{
+  padding-top: 60px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 34px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 400px;
 }
 
-.modalka-container{
-  position:relative;
+.modal-form__label{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
 }
 
-.wrapper-modal{
-   margin: auto;
-  position: absolute;
-  top: 58px; left: 0; bottom: 0; right: 0;
-  z-index: 800;
-}
-
-.modal__input{
+.modal-form__input{
   width: 280px;
   height: 52px;
-}
+} 
 
-.modal__input{
-  margin-bottom: 40px;
-}
-
-.modal__input:focus{
-  outline:1px solid #CD06FF;
-}
-
-.modal{
+.modal-form{
   display: flex;
   flex-direction: column;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
+  gap:40px;
 }
 
-.modal__label{
-  display: flex;
-  flex-direction: column;
-}
-
-.modal__title{
-font-weight: bold;
-font-size: 22px;
-line-height: 30px;
-text-transform: uppercase;
-color: #FFFFFF;
-margin-bottom: 40px;
-padding-top: 60px;
-}
-
-.modal{
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.modal__button{
-  width: 300px;
-  height: 60px;
+.modal-button{
   font-weight: bold;
   font-size: 22px;
   line-height: 28px;
   text-transform: uppercase;
   color: #6C0287;
+  padding: 16px 52px;
+  border-radius: 10px;
 }
 
+.close-pos{
+  position: relative;
+}
+
+.form-pos{
+  position: relative;
+}
+
+.modal-close{
+  background-color: transparent;
+  border:none;
+  margin-bottom: 3px;
+  position: absolute;
+  right: 15px;
+  top:15px;
+}
+
+.container_modal{
+  /* border:2px solid lime; */
+  position: relative;
+}
+
+.main-wrapper{
+  display: none;
+  position: absolute;
+  top:58px;
+  left: calc(50% - 300px);
+  z-index: 100;
+}
+
+.modal-form__label{
+  font-size: 14px;
+line-height: 16px;
+
+}
