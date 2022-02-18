@@ -118,29 +118,71 @@ $('.modal').submit(function(event){
   })
 });  
 
-// const modalOrderTitle2 = $('.hall-form__title')
 
-// $('.hall-form').submit(function(event){
-//   event.preventDefault();
-//   $.ajax({
-//     url: 'https://jsonplaceholder.typicode.com/todos',
-//     type: 'POST',
-//     data: $(this).serialize(),
-//     statusCode: {
-//     201: function(data) {
-//       this.sucсess(data);
-//       }
-//     },
-//     sucсess(data){
-//       console.log(modalOrderTitle2);
-//       modalOrderTitle2.text('Спасибо ваша заявка принята, номер заявки' + '' + data.id)
-//       $('hall-form').slideUp(300);
-//     },
-//     error(){
-//       modalOrderTitle2.text('Что-то пошло не так')
-//     }
-//   })
-// });  
+
+
+// Форма бронирования залов
+
+const modalOrderDate = $('.input-date') 
+const modalOrderTime = $('.input-time')
+const modalOrderCount = $('.input-count')
+const modalOrderName = $('.input-name')
+const modalOrderSurname = $('.input-surname')
+const modalOrderTel = $('.input-tel')
+const modalOrderMail = $('.input-mail')
+const modalOrderDescription = $('.halls-form__description')
+
+
+  modalOrderDate.focus(function(){
+  modalOrderDescription.text(`Введите дату`)
+})
+
+  modalOrderTime.focus(function(){
+  modalOrderDescription.text(`Введите время`)
+})
+
+  modalOrderCount.focus(function(){
+  modalOrderDescription.text(`Введите количество человек`)
+})
+
+  modalOrderName.focus(function(){
+  modalOrderDescription.text(`Введите имя`)
+})
+
+  modalOrderSurname.focus(function(){
+  modalOrderDescription.text(`Введите фамилию`)
+})
+
+  modalOrderTel.focus(function(){
+  modalOrderDescription.text(`Введите свой телефон`)
+})
+
+  modalOrderMail.focus(function(){
+  modalOrderDescription.text(`Введите вашу почту`)
+})
+
+
+$('.hall-form').submit(function(event){
+  event.preventDefault();
+  $.ajax({
+    url: 'https://jsonplaceholder.typicode.com/todos',
+    type: 'POST',
+    data: $(this).serialize(),
+    statusCode: {
+    201: function(data) {
+      this.sucсess(data);
+      }
+    },
+    sucсess(data){
+      console.log( modalOrderDescription);
+      modalOrderDescription.text('Спасибо ваша заявка принята, номер заявки' + '' + data.id)
+      $('hall-form').slideUp(300);
+    },
+    error(){
+      modalOrderDescription.text('Что-то пошло не так')
+    }
+  })
+});  
 
 
 
