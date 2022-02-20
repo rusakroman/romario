@@ -66,48 +66,32 @@ line-height: 28px;
   gap:26px;
 }
 
-
-.social__link_insta{
+.social__link {
   display: block;
-  background-image: url('../img/instagram.svg');
-  background-repeat: no-repeat;
   width: 50px;
   height: 50px;
+  background-repeat: no-repeat;
+}
+
+.social__link_insta{
+  background-image: url('../img/instagram.svg');
 }
 
 .social__link_vk{
-  display: block;
   background-image: url('../img/vk.svg');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
 }
 
 .social__link_fb{
-  display: block;
   background-image: url('../img/facebook.svg');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;
 }
 
 .social__link_tg{
-  display: block;
-  background-image: url('../img/telegram.svg');
-  background-repeat: no-repeat;
-  width: 50px;
-  height: 50px;  
+  background-image: url('../img/telegram.svg'); 
 }
 
 .footer-flex{
   display: flex;
   justify-content: space-between;
-}
-
-
-
-.social__svg_insta {
-    fill: currentColor;
 }
 
 .social__link_insta{
@@ -129,12 +113,9 @@ line-height: 28px;
     outline: 0;
 }
 
-.social__svg_vk {
-    fill: currentColor;
-}
 
 .social__link_vk{
- color: var(--main-color,#fff);
+  color: var(--main-color,#fff);
   outline:0;
 }
 

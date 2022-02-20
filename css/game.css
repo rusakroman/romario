@@ -2,8 +2,6 @@
     position: relative;
 }
 
-
-
 .game-top__link{
     padding: 25px 69px;
     background-color:  var(--purple,#6c0287);
@@ -180,7 +178,7 @@ gap:15px;
     height: 583px; 
 } 
 
-.arrow_size{
+.arrow{
     width: 67px;
     height: 67px;
 }

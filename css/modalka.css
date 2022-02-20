@@ -78,3 +78,21 @@
 line-height: 16px;
 
 }
+
+.modalsost{
+  color:#fff;
+  transition: color .3s ease-in-out;
+}
+
+.modalsost:hover{
+  color: #cd06ff;
+}
+
+.modalsost:focus{
+  color: #cd06ff;
+}
+
+.modalsost:active{
+  color: #840AA3;
+}
+
