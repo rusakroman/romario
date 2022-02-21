@@ -47,12 +47,25 @@ $('.questions__list').accordion({
   icons: icons
 });
 
-const modalBtn = $('.burger')
+const modalBtn = $('.burger__button')
 const modalkaBtn = $('.header__button')
+const btnClose = $('.burger__close')
 
 modalBtn.click(function(){
   $('.navigation__list').show(1000); 
+  $('.burger__button').hide(100);
+  $('.burger__close').show(100);
 });
+
+
+btnClose.click(function(){
+  $('.navigation__list').hide(1000); 
+  $('.burger__button').show(100);
+  $('.burger__close').hide(100);
+});
+
+
+
 
 modalkaBtn.click(function(){
   $('.main-wrapper').show(1000); 
