@@ -146,8 +146,8 @@ gap:15px;
 .arrow{
     display:block;
     background-image: url('../img/arrow.svg');
-    width: 97px;
-    height: 97px;
+    width: 99px;
+    height: 99px;
     background-repeat: no-repeat;
     position:absolute;
     left:50%;
@@ -164,8 +164,6 @@ gap:15px;
 
 .arrow-condition:focus{
     background-image: url('../img/arrow/arrow-border.svg');
-    width: 99px;
-    height: 99px;
 }
 
 .arrow-condition:active{
@@ -187,8 +185,8 @@ gap:15px;
 
 .arrow{
     background-image: url('../img/arr.svg');
-    width: 67px;
-    height: 67px;
+    width: 69px;
+    height: 69px;
 }
 
 .arrow-condition:hover{
@@ -198,8 +196,6 @@ gap:15px;
 
 .arrow-condition:focus{
     background-image: url('../img/arrow/focus-small.svg');
-    width: 69px;
-    height: 69px;
 }
 
 .arrow-condition:active{
