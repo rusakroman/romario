@@ -58,10 +58,10 @@
             <form class="modal-form modal" action="https://postman-echo.com/post" method="POST">
               <h2 class="modal-form__title">Заказать звонок</h2>
               <label class="modal-form__label">Имя
-                <input class="modal-form__input" type="text" name="firstname" placeholder="Имя">
+                <input class="modal-form__input" type="text" name="firstname" placeholder="Имя" required>
               </label>
               <label class="modal-form__label">Телефон
-                <input class="modal-form__input" type="tel" name="mobile" placeholder="Телефон">
+                <input class="modal-form__input" type="tel" name="mobile" placeholder="Телефон" required>
               </label>
               <button type="submit" class="modal-button">Позвонить мне</button>
             </form>
@@ -247,7 +247,7 @@
           <fieldset class="main-fil__col first">
 
             <fieldset class="dtime">
-              <input class="first-input  input-date input-condition" name="date" type="date" value="Дата" placeholder="Дата" required>
+              <input class="first-input  input-date input-condition" name="date" type="date" value="" placeholder="Дата" required>
               <input class="first__input input-time input-condition" name="time" type="time" placeholder="Время" required>
             </fieldset>
             <fieldset class="countchel">

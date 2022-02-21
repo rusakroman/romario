@@ -49,17 +49,28 @@
     transition: background-color .2s ease-in-out;
 }
 
-/* .acc__accord:hover{
-    background-image: url("../img/hover-plus.svg");
+/* .acc__accord-active:nth-child(even):hover{
+    background-image: url('../img/icons/allwhite.svg');
 } */
+
+.acc__accord:hover{
+    background-image: url("../img/icons/all-purple.svg");
+}
+
 
 .acc__accord-active{
     background-image: url("../img/icons/pirple-minus.svg");
 }
 
+
 .questions__item:nth-child(even) .acc__accord{ 
     background-image: url("../img/icons/white-plus.svg");
 }
+
+.questions__item:nth-child(even):hover .acc__accord{ 
+    background-image: url("../img/icons/allwhite.svg");
+}
+
 
 .questions__item:nth-child(even) .acc__accord-active{ 
     background-image: url("../img/icons/white-minus.svg");
