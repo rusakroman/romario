@@ -198,8 +198,8 @@ gap:15px;
 
 .arrow-condition:focus{
     background-image: url('../img/arrow/focus-small.svg');
-    width: 99px;
-    height: 99px;
+    width: 69px;
+    height: 69px;
 }
 
 .arrow-condition:active{
