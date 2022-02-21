@@ -145,16 +145,17 @@ gap:15px;
 
 .arrow{
     display:block;
-    background: url("../img/down.svg");
+    background-image: url('../img/arrow.svg');
+    width: 97px;
+    height: 97px;
     background-repeat: no-repeat;
-    width: 105px;
-    height: 105px;
     position:absolute;
     left:50%;
     transform: translateX(-50%);
     bottom: 8%;
     z-index: 620;
 }
+
 
 .arrow-condition:hover{
     background-image: url('../img/arrow/white-arrow.svg');
@@ -163,6 +164,8 @@ gap:15px;
 
 .arrow-condition:focus{
     background-image: url('../img/arrow/arrow-border.svg');
+    width: 99px;
+    height: 99px;
 }
 
 .arrow-condition:active{
@@ -173,15 +176,36 @@ gap:15px;
     padding-left: 5px;
 }
 
+.arrow-wrapper{
+    border:1px solid red;
+}
+
 @media(max-width:1024px){
     .container-game{
     height: 583px; 
 } 
 
 .arrow{
+    background-image: url('../img/arr.svg');
     width: 67px;
     height: 67px;
 }
+
+.arrow-condition:hover{
+    background-image: url('../img/arrow/hover-small.svg');
+    transition: background-image .2s ease-in-out;
+}
+
+.arrow-condition:focus{
+    background-image: url('../img/arrow/focus-small.svg');
+    width: 99px;
+    height: 99px;
+}
+
+.arrow-condition:active{
+    background-image: url('../img/arrow/active-small.svg');
+}
+
 
 .container-game::after{
     width: 453px;
