@@ -1,5 +1,5 @@
 .footer-game{
-  padding-bottom: 204px;
+  padding-bottom: 21px;
   padding-top: 67px;
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
@@ -92,6 +92,7 @@ line-height: 28px;
 .footer-flex{
   display: flex;
   justify-content: space-between;
+  margin-bottom: 145px;
 }
 
 .social__link_insta{
@@ -198,6 +199,28 @@ line-height: 28px;
   height: 274px;
 }
 
+.wrapper-copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right-copyright{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 6px;
+}
+
+.copyright__text{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.right-copyright__text{
+  font-size: 14px;
+  line-height: 16px;
+}
 
 @media(max-width:1080px){
   .social__svg{
@@ -240,6 +263,23 @@ line-height: 28px;
   }
 
 }
+
+@media(max-width:480px){
+  .wrapper-copyright{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footer-flex{
+  margin-bottom: 63px;
+}
+
+.copyright{
+  margin-bottom: 19px;
+}
+
+}
+
 
 
 

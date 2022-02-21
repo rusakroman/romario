@@ -261,7 +261,7 @@ flex-basis: 70px;
 
 }
 
-@media(max-width:440px) {
+@media(max-width:460px) {
   .header__logo{
     width: 73px;
     height: 45px;
@@ -285,6 +285,11 @@ display:none;
 .burger{
   /* display:inline-block; */
   margin-right: auto;
+}
+
+.burger__button{
+  width: 39px;
+  height: 20px;
 }
 
 }
