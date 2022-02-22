@@ -91,6 +91,7 @@
     .hall__title{
         font-size: 30px;
         line-height: 40px;
+        padding-top: 0;
     }
 
 }

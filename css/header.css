@@ -261,8 +261,8 @@ flex-basis: 70px;
 
 @media(max-width:460px) {
   .header__logo{
-    width: 73px;
-    height: 45px;
+    width: 66px;
+    height: 42px;
     margin: 0;
   }
 
