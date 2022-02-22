@@ -103,8 +103,6 @@
     color: #840AA3;
 } 
 
-
-
 @media(max-width:1100px) {
   .header__logo{
     width: 87px;
@@ -287,9 +285,9 @@ display:none;
   margin-right: auto;
 }
 
-.burger__button{
+.burger-svg{
   width: 39px;
-  height: 20px;
+  height: 29px;
 }
 
 }
