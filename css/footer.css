@@ -1,10 +1,10 @@
-.footer-game{
+.footer-game {
   padding-bottom: 21px;
   padding-top: 67px;
-  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
 }
 
-.footer-game__title{
+.footer-game__title {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
@@ -13,57 +13,63 @@
   margin-bottom: 54px;
 }
 
-.info__list{
-    margin-bottom: 35px;
-}
-
-.info__description{
+.info__link {
   font-weight: bold;
-font-size: 24px;
-line-height: 28px;
+  font-size: 24px;
+  line-height: 28px;
 }
 
-.info__item{
+.info__list {
+  margin-bottom: 35px;
+}
+
+.info__description {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.info__item {
   display: flex;
   gap: 28px;
-  align-items:center;
-} 
+  align-items: center;
+}
 
-.info__link_location{
-  display:block;
+.info__link_location {
+  display: block;
   background-image: url('../img/location.svg');
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
 
-.info__link_call{
-  display:block;
+.info__link_call {
+  display: block;
   background-image: url('../img/call.svg');
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
 
-.info__link_mail{
-  display:block;
+.info__link_mail {
+  display: block;
   background-image: url('../img/mail.svg');
   background-repeat: no-repeat;
   width: 32px;
   height: 32px;
 }
 
-.item-location{
+.item-location {
   margin-bottom: 51px;
 }
 
-.item-call{
+.item-call {
   margin-bottom: 10px;
 }
 
-.social__list{
+.social__list {
   display: flex;
-  gap:26px;
+  gap: 26px;
 }
 
 .social__link {
@@ -71,229 +77,216 @@ line-height: 28px;
   /* width: 50px;
   height: 50px; */
   background-repeat: no-repeat;
-  color: var(--main-color,#fff);
-  outline:0;
+  color: var(--main-color, #fff);
+  outline: 0;
 }
 
-
-.footer-flex{
+.footer-flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 145px;
 }
 
-.social__link_insta{
-  color: var(--main-color,#fff);
-  outline:0;
+.social__link_insta {
+  color: var(--main-color, #fff);
+  outline: 0;
 }
 
 .social__link_insta:hover {
-    color:  #EADEED;
+  color: #eadeed;
 }
 
 .social__link_insta:focus {
-    outline: 1px solid var(--pink, #CD06FF);
-    color:  #EADEED;
+  outline: 1px solid var(--pink, #cd06ff);
+  color: #eadeed;
 }
 
 .social__link_insta:active {
-    color:  var(--pink, #CD06FF);
-    outline: 0;
+  color: var(--pink, #cd06ff);
+  outline: 0;
 }
 
-
-.social__link_vk{
-  color: var(--main-color,#fff);
-  outline:0;
+.social__link_vk {
+  color: var(--main-color, #fff);
+  outline: 0;
 }
 
 .social__link_vk:hover {
-    color:  #EADEED;
+  color: #eadeed;
 }
 
 .social__link_vk:focus {
-    outline: 1px solid var(--pink, #CD06FF);
-    color:  #EADEED;
+  outline: 1px solid var(--pink, #cd06ff);
+  color: #eadeed;
 }
 
 .social__link_vk:active {
-    color:  var(--pink, #CD06FF);
-    outline: 0;
+  color: var(--pink, #cd06ff);
+  outline: 0;
 }
-
 
 .social__svg_fb {
-    fill: currentColor;
+  fill: currentColor;
 }
 
-.social__link_fb{
+.social__link_fb {
   сolor: #fff;
-  outline:0;
+  outline: 0;
 }
 
 .social__link_fb:hover {
-    color:  #EADEED;
+  color: #eadeed;
 }
 
 .social__link_fb:focus {
-    outline: 1px solid var(--pink, #CD06FF);
-    color:  #EADEED;
+  outline: 1px solid var(--pink, #cd06ff);
+  color: #eadeed;
 }
 
 .social__link_fb:active {
-    color: var(--pink, #CD06FF);
-    outline: 0;
+  color: var(--pink, #cd06ff);
+  outline: 0;
 }
 
 .social__svg_tg {
-    fill: currentColor;
+  fill: currentColor;
 }
 
-.social__link_tg{
+.social__link_tg {
   сolor: #fff;
-  outline:0;
+  outline: 0;
 }
 
 .social__link_tg:hover {
-    color:  #EADEED;
+  color: #eadeed;
 }
 
 .social__link_tg:focus {
-    outline: 1px solid var(--pink, #CD06FF);
-    color:  #EADEED;
-
+  outline: 1px solid var(--pink, #cd06ff);
+  color: #eadeed;
 }
 
 .social__link_tg:active {
-    color:  var(--pink, #CD06FF);
-    outline: 0;
+  color: var(--pink, #cd06ff);
+  outline: 0;
 }
 
-.social__svg_vk{
+.social__svg_vk {
   fill: currentColor;
 }
 
-.social__svg_fb{
+.social__svg_fb {
   fill: currentColor;
 }
 
-.social__svg_tg{
+.social__svg_tg {
   fill: currentColor;
 }
 
-.maps{
+.maps {
   width: 57.6%;
   height: 274px;
 }
 
-.wrapper-copyright{
+.wrapper-copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.right-copyright{
+.right-copyright {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 6px;
 }
 
-.copyright__text{
+.copyright__text {
   font-size: 14px;
   line-height: 16px;
 }
 
-.right-copyright__text{
+.right-copyright__text {
   font-size: 14px;
   line-height: 16px;
 }
 
-@media(max-width:1080px){
+@media (max-width: 1080px) {
   /* .social__svg{
     width: 40px;
     height: 40px;
   } */
 
-  .info__item{
-  gap: 13px;
-} 
+  .info__item {
+    gap: 13px;
+  }
 
-.info__link{
-  width: 26px;
-  height: 26px;
-}
+  .info__link {
+    width: 26px;
+    height: 26px;
+  }
 
-.footer-game__img{
-  width: 26px;
-  height: 26px;
-}
+  .footer-game__img {
+    width: 26px;
+    height: 26px;
+  }
 
-.svg-size{
+  .svg-size {
     width: 40px;
     height: 40px;
   }
-
 }
 
-
-
-@media(max-width:768px){
-  .footer-flex{
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-  }
-
-  .social__list{
-    margin-bottom: 30px;
-  }
-
-  .maps{
-    width: 100%;
-    /* border:1px solid red; */
-  }
-
-  .svg-size{
-    width: 40px;
-    height: 40px;
-  }
-
-  .wrapper-social{
-    display: flex;
+@media (max-width: 810px) {
+  .footer-flex {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
+  .social__list {
+    margin-bottom: 30px;
+  }
+
+  .maps {
+    width: 100%;
+    /* border:1px solid red; */
+  }
+
+  .svg-size {
+    width: 40px;
+    height: 40px;
+  }
+
+  .wrapper-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-@media(max-width:480px){
-  .wrapper-copyright{
+@media (max-width: 480px) {
+  .wrapper-copyright {
     flex-direction: column;
     justify-content: center;
   }
 
-  .footer-flex{
-  margin-bottom: 63px;
-}
+  .footer-flex {
+    margin-bottom: 63px;
+  }
 
-.copyright{
-  margin-bottom: 19px;
-}
+  .copyright {
+    margin-bottom: 19px;
+  }
 
-.svg-size{
+  .svg-size {
     width: 30px;
     height: 30px;
   }
 
+  .info__link {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
-
-
-
-
-
-
-
-
-
